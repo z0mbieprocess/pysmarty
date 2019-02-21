@@ -1,0 +1,623 @@
+[
+    {
+        "ADDR": 1,
+        "ID": "ALARM_ROTOR_BROKEN_BELT_WARNING",
+        "NAME": "Warning! Rotor broken belt alarm",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 2,
+        "ID": "ALARM_FIREPLACE_PROTECTION_ACTIVATED",
+        "NAME": "Alarm! Fireplace protection activated",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 3,
+        "ID": "ALARM_DRYNESS_PROTECTION_ACTIVATED",
+        "NAME": "Warning! Dryness protection activated",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 4,
+        "ID": "ALARM_PLATE_HEAT_EXCHANGER_FROST_PROTECTION_ACTIVATED",
+        "NAME": "Warning! Plate heat exchanger frost protection activated",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 5,
+        "ID": "ALARM_PLATE_HEAT_EXCHANGER_FROST_PROTECTION_SYSTEM_STOPPED",
+        "NAME": "Alarm! Plate heat exchanger frost protection system stopped",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 6,
+        "ID": "ALARM_PLATE_HEAT_EXCHANGER_FROST_PROTECTION_PRESS_RELE",
+        "NAME": "Warning! Plate heat exchanger frost protection (pressure relay)",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 7,
+        "ID": "ALARM_HYDRONIC_HEATER_FROST_PROTECTION_SYSTEM_STOPPED",
+        "NAME": "Alarm! Hydronic heater frost protection. System stopped.",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 8,
+        "ID": "ALARM_TOO_LOW_SUPPLY_TEMPERATURE",
+        "NAME": "Warning! Too low supply temperature",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 9,
+        "ID": "ALARM_TOO_HIGH_SUPPLY_TEMPERATURE",
+        "NAME": "Warning! Too high supply temperature",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 10,
+        "ID": "ALARM_TOO_LOW_SUPPLY_TEMPERATURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Too low supply temperature. System stopped.",
+        "STATES": {
+            "1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 11,
+        "ID": "ALARM_TOO_HIGH_SUPPLY_TEMPERATURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Too high supply temperature. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 12,
+        "ID": "ALARM_CHANGE_SUPPLY_AIR_FILTER_PRESS_RELE_SYSTEM_STOPPED",
+        "NAME": "Warning! Change supply air filter (pressure relay).",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 13,
+        "ID": "ALARM_CHANGE_EXTRACT_AIR_FILTER_PRESS_RELE_SYSTEM_STOPPED",
+        "NAME": "Warning! Change extract air filter (pressure relay).",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 14,
+        "ID": "ALARM_CHANGE_SUPPLY_AND_EXTRACT_FILTERS",
+        "NAME": "Warning! Change supply and extract filters (timeout)",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 15,
+        "ID": "ALARM_F1_FUSE_FAILURE",
+        "NAME": "Alarm! Power supply failure. Please check F1 fuse.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 16,
+        "ID": "ALARM_SUPPLY_AIR_TEMPERATURE_SENSOR_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Supply air temperature sensor failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 17,
+        "ID": "ALARM_EXTRACT_AIR_TEMPERATURE_SENSOR_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Extract air temperature sensor failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 18,
+        "ID": "ALARM_EXHAUST_AIR_TEMPERATURE_SENSOR_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Exhaust air temperature sensor failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 19,
+        "ID": "ALARM_OUTDOOR_AIR_TEMPERATURE_SENSOR_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Outdoor air temperature sensor failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 20,
+        "ID": "ALARM_HYDRONIC_HEATER_WATER_TEMPERATURE_SENSOR_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Hydronic heater water temperature sensor failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 21,
+        "ID": "ALARM_HYDRONIC_PREHEATER_WATER_TEMPERATURE_SENSOR_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Hydronic pre-heater water temperature sensor failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 22,
+        "ID": "ALARM_HYDRONIC_COOLER_WATER_TEMPERATURE_SENSOR_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Hydronic cooler water temperature sensor failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 23,
+        "ID": "ALARM_CONTROL_BOX_TEMPERATURE_SENSOR_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Controller cabinet temperature sensor failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 24,
+        "ID": "ALARM_SUPPLY_AIR_TEMPERATURE_SENSOR_FAILURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Supply air temperature sensor failure. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 25,
+        "ID": "ALARM_EXTRACT_AIR_TEMPERATURE_SENSOR_FAILURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Extract air temperature sensor failure. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 26,
+        "ID": "ALARM_EXHAUST_AIR_TEMPERATURE_SENSOR_FAILURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Exhaust air temperature sensor failure. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 27,
+        "ID": "ALARM_OUTDOOR_AIR_TEMPERATURE_SENSOR_FAILURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Outdoor air temperature sensor failure. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 28,
+        "ID": "ALARM_HYDRONIC_HEATER_WATER_TEMPERATURE_SENSOR_FAILURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Hydronic heater water temperature sensor failure. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 29,
+        "ID": "ALARM_HYDRONIC_PREHEATER_WATER_TEMPERATURE_SENSOR_FAILURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Hydronic pre-heater water temperature sensor failure. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 30,
+        "ID": "ALARM_HYDRONIC_COOLER_WATER_TEMPERATURE_SENSOR_FAILURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Hydronic cooler water temperature sensor failure. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 31,
+        "ID": "ALARM_CONTROL_BOX_TEMPERATURE_SENSOR_FAILURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Controller cabinet temperature sensor failure. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 32,
+        "ID": "ALARM_FIRE_DAMPER_TEST_OK",
+        "NAME": "Fire damper test OK",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 33,
+        "ID": "ALARM_FIRE_DAMPER_TEST_FAILED",
+        "NAME": "Warning! Fire damper test failed",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 34,
+        "ID": "ALARM_HEATER_MANUAL_PROTECTION_SYSTEM_STOPPPED",
+        "NAME": "Alarm! Heater manual protection. System stopped!",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 35,
+        "ID": "ALARM_HEATER_AUTOMATIC_PROTECTION",
+        "NAME": "Warning! Heater automatic protection",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 36,
+        "ID": "ALARM_PREHEATER_MANUAL_PROTECTION_SYSTEM_STOPPPED",
+        "NAME": "Alarm! Pre-heater manual protection. System stopped!",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 37,
+        "ID": "ALARM_PREHEATER_AUTOMATIC_PROTECTION",
+        "NAME": "Warning! Pre-heater automatic protection",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 38,
+        "ID": "ALARM_SUPPLY_FAN_PROTECTION",
+        "NAME": "Alarm! Supply fan failure",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 39,
+        "ID": "ALARM_EXTRACT_FAN_PROTECTION",
+        "NAME": "Alarm! Extract fan failure",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 40,
+        "ID": "ALARM_DX_COOLER_PROTECTION",
+        "NAME": "Alarm! DX cooler failure",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 41,
+        "ID": "ALARM_FIRE_ALARM",
+        "NAME": "Alarm! Fire",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 42,
+        "ID": "ALARM_SUPPLY_FAN_PRESSURE_PROTECTION_SYSTEM_STOPPPED",
+        "NAME": "Alarm! Supply fan pressure protection. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 43,
+        "ID": "ALARM_EXTRACT_FAN_PRESSURE_PROTECTION_SYSTEM_STOPPPED",
+        "NAME": "Alarm! Extract fan pressure protection. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 44,
+        "ID": "ALARM_INTERNAL",
+        "NAME": "Alarm! Internal system error.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 45,
+        "ID": "ALARM_HEATER_MANUAL_PROTECTION_BOOSTING",
+        "NAME": "Alarm! Heater manual protection. Boosting.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 46,
+        "ID": "ALARM_PREHEATER_MANUAL_PROTECTION_BOOSTING",
+        "NAME": "Alarm! Pre-heater manual protection. Boosting.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 47,
+        "ID": "ALARM_INTERNAL_COMMUNICATION_ERROR",
+        "NAME": "Alarm! Internal communication error",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 48,
+        "ID": "ALARM_DX_COOLER_DEFROSTING",
+        "NAME": "Warning! DX cooler defrosting",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 49,
+        "ID": "ALARM_TOO_HI_3DAYS_RH",
+        "NAME": "Warning! Too high 3 days extract humidity. Increasing air flow.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 50,
+        "ID": "ALARM_TOO_HI_RH",
+        "NAME": "Warning! Too high extract humidity. Boosting.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 51,
+        "ID": "ALARM_ROTOR_BROKEN_BELT_ALARM_SYSTEM_STOPPED",
+        "NAME": "Alarm! Rotor broken belt alarm. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 52,
+        "ID": "ALARM_GAS_HEATER_FAILURE",
+        "NAME": "Warning! Gas heater failure",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 53,
+        "ID": "ALARM_GAS_PREHEATER_FAILURE",
+        "NAME": "Warning! Gas pre-heater failure",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 54,
+        "ID": "ALARM_TOO_HI_CONDENSATION",
+        "NAME": "Warning! Too high condensation level",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 55,
+        "ID": "ALARM_SUPPLY_FAN_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Supply fan failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 56,
+        "ID": "ALARM_EXTRACT_FAN_FAILURE_EMERGENCY_RUN",
+        "NAME": "Warning! Extract fan failure. Emergency run.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 57,
+        "ID": "ALARM_TOO_LOW_SUPPLY_AIR_FLOW",
+        "NAME": "Warning! Too low supply air flow for DX cooler",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 58,
+        "ID": "ALARM_BYPASS_DAMPER_ALARM_SYSTEM_STOPPED",
+        "NAME": "Alarm! Bypass damper failure. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 59,
+        "ID": "ALARM_HEATER_CIRC_PUMP_FAILURE_SYSTEM_STOPPED",
+        "NAME": "Alarm! Hydronic heater/pre-heater circ. pump failute. System stopped.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 60,
+        "ID": "ALARM_HEATER_CIRC_PUMP_FAILURE",
+        "NAME": "Warning! Hydronic heater/pre-heater circ. pump failute.",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 61,
+        "ID": "ALARM_REMOTE_HEATER_ALARM_SYSTEM_STOPPED ",
+        "NAME": "Alarm! Remote heater failure!",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 62,
+        "ID": "ALARM_REMOTE_HEATER_WARNING",
+        "NAME": "Warning! Remote heater failure!",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 63,
+        "ID": "ALARM_REMOTE_PRE_HEATER_ALARM_SYSTEM_STOPPED",
+        "NAME": "Alarm! Remote pre-heater failure!",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 64,
+        "ID": "ALARM_REMOTE_PRE_HEATER_WARNING",
+        "NAME": "Warning! Remote pre-heater failure!",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 65,
+        "ID": "ALARM_REMOTE_COOLER_ALARM_SYSTEM_STOPPED",
+        "NAME": "Alarm! Remote cooler failure!",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 66,
+        "ID": "ALARM_REMOTE_COOLER_WARNING",
+        "NAME": "Warning! Remote cooler failure!",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 67,
+        "ID": "ALARM_FIRE_ALARM2 ",
+        "NAME": "Alarm! Fire protection 2",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 188,
+        "ID": "DI_CRITICAL_ALARM",
+        "NAME": "Any active critical alarm",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    },
+    {
+        "ADDR": 189,
+        "ID": "DI_WARNING",
+        "NAME": "Any active warning",
+        "STATES": {
+            " 1": "Active",
+            "0": "Not active"
+        }
+    }
+]

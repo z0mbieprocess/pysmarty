@@ -1,0 +1,40 @@
+[
+    {
+        "ID": "HR_USER_CONFIG_CURRENT_SYSTEM_MODE",
+        "ADDR": 1,
+        "NAME": "Current system mode",
+        "STATES": {
+            "Stand-by": 0,
+            "Building protection": 1,
+            "Economy": 2,
+            "Confort": 3
+        }
+    },
+    {
+        "ID": "HR_ALARM_A",
+        "ADDR": 200,
+        "NAME": "Alarm A ()",
+        "STATES": {
+            "no alarms": 0,
+            "alarm": 1
+        }
+    },
+    {
+        "ID": "HR_ALARM_B",
+        "ADDR": 201,
+        "NAME": "Alarm B ()",
+        "STATES": {
+            "no warnings": 0,
+            "warning": 1
+        }
+    },
+    {
+        "ID": "HR_ALARMS_RESET",
+        "ADDR": 202,
+        "NAME": "Alarms Reset",
+        "STATES": {
+            "nothing": 0,
+            "activate": 1
+        }
+    }
+]

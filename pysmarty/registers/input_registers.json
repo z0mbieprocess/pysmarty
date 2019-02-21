@@ -1,0 +1,95 @@
+[
+    {
+        "ID": "IR_CURRENT_SYSTEM_STATE",
+        "ADDR": 1,
+        "NAME": "Current system state",
+        "MULTIPLIER": 1,
+        "STATES": {
+            "0": "Stand-by",
+            "1": "Building protection",
+            "2": "Economy",
+            "3": "Comfort",
+            "4": "Emergency run",
+            "5": "Preparing",
+            "6": "Opening dampers",
+            "7": "Boost",
+            "8": "Cooling heaters",
+            "9": "Closing dampers",
+            "10": "Night Cooling",
+            "11": "Critical alarm",
+            "12": "Fire alarm",
+            "13": "Heat exchanger frost protection",
+            "14": "Change filters",
+            "15": "Room RH 3 days average is lower than 30%. Limiting speed",
+            "16": "DX cooler defrosting",
+            "17": "Fire damper testing"
+        }
+    },
+    {
+        "ID": "IR_SOFTWARE_VERSION",
+        "ADDR": 2,
+        "NAME": "Software version",
+        "MULTIPLIER": 1
+    },
+    {
+        "ID": "IR_CONFIGURATION_VERSION",
+        "ADDR": 3,
+        "NAME": "Configuration version",
+        "MULTIPLIER": 1
+    },
+    {
+        "ID": "IR_CURRENT_SYSTEM_MODE",
+        "ADDR": 15,
+        "NAME": "Current system mode",
+        "MULTIPLIER": 1,
+        "STATES": {
+            "0": "Stand-by",
+            "1": "Building protection",
+            "2": "Economy",
+            "3": "Comfort",
+            "4": "Boost"
+        }
+    },
+    {
+        "ID": "IR_SUPPLY_AIR_TEMPERATURE",
+        "ADDR": 18,
+        "NAME": "T1-Supply air temperature",
+        "MULTIPLIER": 0.1,
+        "UNIT_OF_MESUREMENT": "\u00b0C"
+    },
+    {
+        "ID": "IR_EXTRACT_AIR_TEMPERATURE",
+        "ADDR": 19,
+        "NAME": "T2-Extract air temperature",
+        "MULTIPLIER": 0.1,
+        "UNIT_OF_MESUREMENT": "\u00b0C"
+    },
+    {
+        "ID": "IR_OUTDOOR_AIR_TEMPERATURE",
+        "ADDR": 21,
+        "NAME": "Outdoor air temperature",
+        "MULTIPLIER": 0.1,
+        "UNIT_OF_MESUREMENT": "\u00b0C"
+    },
+    {
+        "ID": "IR_FILTERS_TIMER_DAYS_LEFT",
+        "ADDR": 30,
+        "NAME": "Filters timer days left",
+        "MULTIPLIER": 1,
+        "UNIT_OF_MESUREMENT": "day"
+    },
+    {
+        "ID": "IR_SUPPLY_FAN_SPEED_RPM",
+        "ADDR": 55,
+        "NAME": "Supply fan spreed RPM",
+        "MULTIPLIER": 1,
+        "UNIT_OF_MESUREMENT": "rpm"
+    },
+    {
+        "ID": "IR_EXTRACT_FAN_SPEED_RPM",
+        "ADDR": 56,
+        "NAME": "Extract fan spreed RPM",
+        "MULTIPLIER": 1,
+        "UNIT_OF_MESUREMENT": "rpm"
+    }
+]

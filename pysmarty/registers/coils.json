@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "COIL_FILTER_TIMER_RESET",
+        "ADDR": 1,
+        "NAME": "Filters timer reset",
+        "STATES": {
+            "Nothing": 0,
+            "Activate": 1
+        }
+    },
+    {
+        "ID": "COIL_DRYNESS_PROTECTION",
+        "ADDR": 3,
+        "NAME": "Dryness protection",
+        "STATES": {
+            "Disabled": 0,
+            "Enabled": 1
+        }
+    },
+    {
+        "ID": "COIL_NIGHT_COOLING_FUNCTION",
+        "ADDR": 4,
+        "NAME": "Night cooling function",
+        "STATES": {
+            "Disabled": 0,
+            "Enabled": 1
+        }
+    },
+    {
+        "ID": "COIL_INTENSIVE_AIR_FLOW_BOOST",
+        "ADDR": 5,
+        "NAME": "Intensive air flow",
+        "STATES": {
+            "Nothing": 0,
+            "Activate": 1
+        }
+    }
+]
