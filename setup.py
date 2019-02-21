@@ -13,7 +13,7 @@ setuptools.setup(
     author_email="theo.nicolau@gmail.com",
     description="Python API for Salda Smarty Modbus TCP",
     long_description=LONG_DESCRIPTION,
-    long_description_content_type="text/mardown",
+    long_description_content_type="text/markdown",
     url="https://github.com/z0mbieprocess/pysmarty",
     packages=setuptools.find_packages(),
     install_requires=list(val.strip() for val in open('requirements.txt')),
