@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pysmarty",
-    version="0.2",
+    version="0.3",
     author="Theo Nicolau",
     author_email="theo.nicolau@gmail.com",
     description="Python API for Salda Smarty Modbus TCP",
@@ -16,6 +16,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/z0mbieprocess/pysmarty",
     packages=setuptools.find_packages(),
+    include_package_data=True,
     install_requires=list(val.strip() for val in open('requirements.txt')),
     classifiers=[
         "Programming Language :: Python :: 3",
