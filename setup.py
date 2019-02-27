@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pysmarty",
-    version="0.3",
+    version="0.7",
     author="Theo Nicolau",
     author_email="theo.nicolau@gmail.com",
     description="Python API for Salda Smarty Modbus TCP",

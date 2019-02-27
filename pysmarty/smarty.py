@@ -88,6 +88,13 @@ class Smarty:
             'HR_ALARM_B')
         return bool(register.state)
 
+    @property
+    def boost(self) -> bool:
+        """Get the Boost State."""
+        register = self._registers.get_register(
+            'COIL_INTENSIVE_AIR_FLOW_BOOST')
+        return bool(register.state)
+
     def get_software_version(self) -> str:
         """Software version."""
         register = self._registers.get_register(
@@ -100,36 +107,56 @@ class Smarty:
             'IR_CONFIGURATION_VERSION')
         return register.state
 
-    async def update(self) -> bool:
+    def update(self) -> bool:
         """Update registers."""
         if self.connection.is_connected():
-            await self._registers.update()
-            return True
+            return self._registers.update()
         return False
 
-    async def set_fan_speed(self, speed) -> bool:
+    def set_fan_speed(self, speed) -> bool:
         """Set Current Fan Speed."""
         if self.connection.is_connected():
             register = self._registers.get_register(
                 'HR_USER_CONFIG_CURRENT_SYSTEM_MODE')
-            await register.set_state(speed)
+            register.set_state(speed)
             return True
         return False
 
-    async def boost(self) -> bool:
+    def turn_off(self) -> bool:
+        """Turn off."""
+        return self.set_fan_speed(0)
+
+    def turn_on(self, speed) -> bool:
+        """Turn on."""
+        return self.set_fan_speed(speed)
+
+    def is_on(self) -> bool:
+        """Get Status."""
+        return bool(self.fan_speed)
+
+    def enable_boost(self) -> bool:
         """Set Intensive Air Flow (limited)."""
         if self.connection.is_connected():
             register = self._registers.get_register(
                 'COIL_INTENSIVE_AIR_FLOW_BOOST')
-            await register.set_state(1)
+            register.set_state(1)
             return True
         return False
 
-    async def reset_filters_timer(self) -> bool:
+    def disable_boost(self) -> bool:
+        """Set Intensive Air Flow (limited)."""
+        if self.connection.is_connected():
+            register = self._registers.get_register(
+                'COIL_INTENSIVE_AIR_FLOW_BOOST')
+            register.set_state(0)
+            return True
+        return False
+
+    def reset_filters_timer(self) -> bool:
         """Reset Filter Timer."""
         if self.connection.is_connected():
             register = self._registers.get_register(
                 'COIL_FILTER_TIMER_RESET')
-            await register.set_state(1)
+            register.set_state(1)
             return True
         return False

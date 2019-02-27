@@ -1,9 +1,6 @@
 """Modbus Client."""
 
-from pymodbus.exceptions import ConnectionException
-from pymodbus.client.asynchronous import schedulers
-from pymodbus.client.asynchronous.tcp import AsyncModbusTCPClient
-from pymodbus.client.asynchronous.asyncio import ModbusClientProtocol
+from pymodbus.client.sync import ModbusTcpClient
 
 
 class Connection:
@@ -13,31 +10,29 @@ class Connection:
         """Modbus Connection init."""
 
         # pylint: disable=unsubscriptable-object
-        self._client = AsyncModbusTCPClient(host=host, port=port,
-                                            loop=loop, timeout=20,
-                                            scheduler=schedulers.ASYNC_IO)[1]
+        self._client = ModbusTcpClient(host=host, port=port)
         self._slave = slave
 
     @property
-    def client(self) -> ModbusClientProtocol:
+    def client(self):
         """Get Modbus Client."""
-        return self._client.protocol
+        return self._client
 
     @property
-    def host(self) -> str:
+    def host(self):
         """Get Host."""
         return self._client.host
 
     @property
-    def port(self) -> int:
+    def port(self):
         """Get Port."""
         return self._client.port
 
     @property
-    def slave(self) -> int:
+    def slave(self):
         """Get Slave."""
         return self._slave
 
-    def is_connected(self) -> bool:
+    def is_connected(self):
         """Return connection state."""
-        return bool(self._client.protocol)
+        return self._client.connect()

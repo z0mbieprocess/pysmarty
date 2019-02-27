@@ -23,7 +23,7 @@ with open(path.join(THIS_DIR, "discrete_inputs.json"), "r") as f:
     DISCRETE_INPUTS = json.load(f)
 
 # read only
-with open(path.join(THIS_DIR,  "input_registers.json"), "r") as f:
+with open(path.join(THIS_DIR, "input_registers.json"), "r") as f:
     INPUT_REGISTERS = json.load(f)
 
 
@@ -57,53 +57,65 @@ class Registers:
                     return reg
         return None
 
-    async def update(self) -> None:
+    def update(self) -> bool:
         """Update all registers."""
-        await self._update_holding_registers()
-        await self._update_coils()
-        await self._update_input_registers()
-        await self._update_input_registers()
+        return (self._update_holding_registers() and
+                self._update_coils() and
+                self._update_input_registers() and
+                self._update_input_registers())
 
-    async def _update_holding_registers(self) -> None:
+    def _update_holding_registers(self) -> bool:
         """Read Holding Registers."""
-        res1 = await self._connection.client.read_holding_registers(
+        res1 = self._connection.client.read_holding_registers(
             1, 37, unit=self._connection.slave)
-        res2 = await self._connection.client.read_holding_registers(
+        res2 = self._connection.client.read_holding_registers(
             200, 3, unit=self._connection.slave)
+        if res1.isError() or res2.isError():
+            return False
         res = {k: v for k, v in zip(range(1, 37), res1.registers)}
         res.update({k: v for k, v in zip(range(200, 202), res2.registers)})
 
         update_states(res, self.holding_registers)
+        return True
 
-    async def _update_coils(self) -> None:
+    def _update_coils(self) -> bool:
         """Update Coils."""
-        res1 = await self._connection.client.read_coils(
+        res1 = self._connection.client.read_coils(
             1, 9, unit=self._connection.slave)
+        if res1.isError():
+            return False
         res = {k: v for k, v in zip(range(1, 10), res1.bits)}
 
         update_states(res, self.coils)
+        return True
 
-    async def _update_discrete_inputs(self) -> None:
+    def _update_discrete_inputs(self) -> bool:
         """Update Discrete Inputs."""
-        res1 = await self._connection.client.read_discrete_inputs(
+        res1 = self._connection.client.read_discrete_inputs(
             1, 67, unit=self._connection.slave)
-        res2 = await self._connection.client.read_discrete_inputs(
+        res2 = self._connection.client.read_discrete_inputs(
             188, 2, unit=self._connection.slave)
+        if res1.isError() or res2.isError():
+            return False
         res = {k: v for k, v in zip(range(1, 67), res1.bits)}
         res.update({k: v for k, v in zip(range(188, 190), res2.bits)})
 
         update_states(res, self.discrete_inputs)
+        return True
 
-    async def _update_input_registers(self) -> None:
+    def _update_input_registers(self) -> bool:
         """Update input registers"""
-        res1 = await self._connection.client.read_input_registers(
+        res1 = self._connection.client.read_input_registers(
             1, 66, unit=self._connection.slave)
-        res2 = await self._connection.client.read_input_registers(
+        res2 = self._connection.client.read_input_registers(
             67, 66, unit=self._connection.slave)
+        if res1.isError() or res2.isError():
+            return False
         res = {k: v for k, v in zip(range(1, 132),
                                     res1.registers +
                                     res2.registers)}
         update_states(res, self.input_registers)
+        return True
 
 
 def update_states(res, registers) -> None:

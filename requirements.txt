@@ -1,1 +1,1 @@
-pymodbus==2.2.0rc1
+pymodbus==1.5.2
